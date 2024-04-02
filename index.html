@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awesome Button</title>
+<style>
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <button id="awesomeButton">I am awesome</button>
+</div>
+
+<script>
+  document.getElementById("awesomeButton").addEventListener("click", function() {
+    var container = document.querySelector(".container");
+    for (var i = 0; i < 10; i++) {
+      var textElement = document.createElement("div");
+      textElement.textContent = "I am awesome!";
+      container.appendChild(textElement);
+    }
+  });
+</script>
+
+</body>
+</html>
+
